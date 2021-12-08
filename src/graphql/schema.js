@@ -4,17 +4,15 @@ export const typeDefs = gql`
     type User {
       name: String
       email: String
-      projects: [Project]
     }
-  
-    type Project {
-        title: String 
-        status: String 
-        members: [User]
-    }
-  
+    # queries:
     type Query {
       users: [User]
+    }
+
+    # mutations:
+    type Mutation {
+      createUser(name:String!, email: String!): User!
     }
   `;
 

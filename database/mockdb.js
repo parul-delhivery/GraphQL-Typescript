@@ -1,16 +1,25 @@
 export const users = [
         {
           name: 'Octavio Flores',
-          email: 'oflores@zcorp.com',
-          projects: [{title: 'Site Upgrade - Summer 2021'}]
+          email: 'oflores@zcorp.com'
         },
         {
           name: 'Farah Bennis',
-          email: 'fbennis@zcorp.com',
-          projects: [{title: 'Site Upgrade - Summer 2021'}]
+          email: 'fbennis@zcorp.com'
         },
       ];
 
+// export class UserDetails {
+//     users = [
+//     {
+//       name: 'Octavio Flores',
+//       email: 'oflores@zcorp.com'
+//     },
+//     {
+//       name: 'Farah Bennis',
+//       email: 'fbennis@zcorp.com'
+//     },
+//   ];
 
-
+// }
 
