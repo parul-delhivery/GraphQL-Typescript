@@ -1,5 +1,5 @@
 // import { users } from "../../database/mockdb";
-import {users} from "../../database/mockdb";
+import {users, UserDetails} from "../../database/mockdb";
 import { User } from "../generated/graphql";
 
 // interface User {
@@ -10,12 +10,12 @@ import { User } from "../generated/graphql";
 // let userDetails = new UserDetails();
 export const resolvers = {
         Query: {
-          users: async () => users,
+          users: async () => UserDetails.users,
         },
         Mutation: {
           createUser: (parent: undefined, args: User) => {
             const newUser = args
-            users.push(newUser) 
+            UserDetails.users.push(newUser) 
             return newUser
           }
         }
